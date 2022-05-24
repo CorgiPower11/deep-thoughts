@@ -12,11 +12,6 @@ const typeDefs = gql`
     friends: [User]
   }
 
-  type Auth {
-    token: ID!
-    user: User
-  }
-
   type Thought {
     _id: ID
     thoughtText: String
@@ -31,6 +26,11 @@ const typeDefs = gql`
     reactionBody: String
     createdAt: String
     username: String
+  }
+
+  type Auth {
+    token: ID!
+    user: User
   }
 
   type Query {
